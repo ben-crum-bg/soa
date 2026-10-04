@@ -1,27 +1,61 @@
-const macyInstanceOne = Macy({
-  container: "#macy-one",
-  columns: "4",
-  trueOrder: false,
-  waitForImages: false,
-  margin: {
-    x: 10,
-    y: 10,
-  },
-  breakAt: {
-    1200: {
-      columns: 3,
-    },
-    700: {
-      columns: 2,
-    },
-    450: {
-      columns: 1,
-    },
-  },
-});
+// const macyInstanceTwo = Macy({
+//   container: "#macy-two",
+//   columns: "6",
+//   trueOrder: false,
+//   waitForImages: false,
+//   margin: {
+//     x: 10,
+//     y: 10,
+//   },
+//   breakAt: {
+//     1700: {
+//       columns: 5,
+//     },
+//     1450: {
+//       columns: 4,
+//     },
+//     1200: {
+//       columns: 3,
+//     },
+//     700: {
+//       columns: 2,
+//     },
+//     450: {
+//       columns: 1,
+//     },
+//   },
+// });
 
-const lightbox = GLightbox({
-  selector: ".gallery-item",
+// const macyInstanceThree = Macy({
+//   container: "#macy-three",
+//   columns: "6",
+//   trueOrder: false,
+//   waitForImages: false,
+//   margin: {
+//     x: 10,
+//     y: 10,
+//   },
+//   breakAt: {
+//     1700: {
+//       columns: 5,
+//     },
+//     1450: {
+//       columns: 4,
+//     },
+//     1200: {
+//       columns: 3,
+//     },
+//     700: {
+//       columns: 2,
+//     },
+//     450: {
+//       columns: 1,
+//     },
+//   },
+// });
+
+const lightbox2 = GLightbox({
+  selector: ".gallery-test",
   touchNavigation: true, // swipe on mobile
   loop: true, // allows infinite navigation
   closeButton: true, // shows the close button
@@ -87,7 +121,7 @@ const observer = new IntersectionObserver(
       img.removeAttribute("height");
 
       img.onload = () => {
-        macyInstanceOne.recalculate(true);
+        // macyInstanceTwo.recalculate(true);
       };
 
       observer.unobserve(img);
