@@ -121,7 +121,8 @@ const observer = new IntersectionObserver(
       img.removeAttribute("height");
 
       img.onload = () => {
-        // macyInstanceTwo.recalculate(true);
+        macyInstanceSeven.recalculate(true);
+        macyInstanceEight.recalculate(true);
       };
 
       observer.unobserve(img);
