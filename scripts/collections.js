@@ -1,58 +1,58 @@
-// const macyInstanceTwo = Macy({
-//   container: "#macy-two",
-//   columns: "6",
-//   trueOrder: false,
-//   waitForImages: false,
-//   margin: {
-//     x: 10,
-//     y: 10,
-//   },
-//   breakAt: {
-//     1700: {
-//       columns: 5,
-//     },
-//     1450: {
-//       columns: 4,
-//     },
-//     1200: {
-//       columns: 3,
-//     },
-//     700: {
-//       columns: 2,
-//     },
-//     450: {
-//       columns: 1,
-//     },
-//   },
-// });
+const macyInstanceSeven = Macy({
+  container: "#macy-seven",
+  columns: "6",
+  trueOrder: false,
+  waitForImages: false,
+  margin: {
+    x: 10,
+    y: 10,
+  },
+  breakAt: {
+    1700: {
+      columns: 5,
+    },
+    1450: {
+      columns: 4,
+    },
+    1200: {
+      columns: 3,
+    },
+    700: {
+      columns: 2,
+    },
+    450: {
+      columns: 1,
+    },
+  },
+});
 
-// const macyInstanceThree = Macy({
-//   container: "#macy-three",
-//   columns: "6",
-//   trueOrder: false,
-//   waitForImages: false,
-//   margin: {
-//     x: 10,
-//     y: 10,
-//   },
-//   breakAt: {
-//     1700: {
-//       columns: 5,
-//     },
-//     1450: {
-//       columns: 4,
-//     },
-//     1200: {
-//       columns: 3,
-//     },
-//     700: {
-//       columns: 2,
-//     },
-//     450: {
-//       columns: 1,
-//     },
-//   },
-// });
+const macyInstanceEight = Macy({
+  container: "#macy-eight",
+  columns: "6",
+  trueOrder: false,
+  waitForImages: false,
+  margin: {
+    x: 10,
+    y: 10,
+  },
+  breakAt: {
+    1700: {
+      columns: 5,
+    },
+    1450: {
+      columns: 4,
+    },
+    1200: {
+      columns: 3,
+    },
+    700: {
+      columns: 2,
+    },
+    450: {
+      columns: 1,
+    },
+  },
+});
 
 const lightbox2 = GLightbox({
   selector: ".gallery-test",

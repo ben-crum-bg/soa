@@ -1,3 +1,23 @@
+.gallery-container h3 {
+  --decoration-width: 2.25rem;
+  --decoration-spacing: .5rem;
+
+  display: block;
+
+  margin-block: 1rem;
+  font-size: 1.5rem;
+}
+
+.gallery-container h3::after {
+  content: '';
+  margin-inline-start: var(--decoration-spacing);
+  display: inline-block;
+  height: 1px;
+  width: var(--decoration-width);
+  vertical-align: middle;
+  background-color: var(--page_color);
+}
+
 .gallery img {
   cursor: pointer;
   transition: transform 0.3s;

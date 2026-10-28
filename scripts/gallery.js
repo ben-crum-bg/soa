@@ -20,6 +20,116 @@ const macyInstanceOne = Macy({
   },
 });
 
+const macyInstanceTwo = Macy({
+  container: "#macy-two",
+  columns: "4",
+  trueOrder: false,
+  waitForImages: false,
+  margin: {
+    x: 10,
+    y: 10,
+  },
+  breakAt: {
+    1200: {
+      columns: 3,
+    },
+    700: {
+      columns: 2,
+    },
+    450: {
+      columns: 1,
+    },
+  },
+});
+
+const macyInstanceThree = Macy({
+  container: "#macy-three",
+  columns: "4",
+  trueOrder: false,
+  waitForImages: false,
+  margin: {
+    x: 10,
+    y: 10,
+  },
+  breakAt: {
+    1200: {
+      columns: 3,
+    },
+    700: {
+      columns: 2,
+    },
+    450: {
+      columns: 1,
+    },
+  },
+});
+
+const macyInstanceFour = Macy({
+  container: "#macy-four",
+  columns: "4",
+  trueOrder: false,
+  waitForImages: false,
+  margin: {
+    x: 10,
+    y: 10,
+  },
+  breakAt: {
+    1200: {
+      columns: 3,
+    },
+    700: {
+      columns: 2,
+    },
+    450: {
+      columns: 1,
+    },
+  },
+});
+
+const macyInstanceFive = Macy({
+  container: "#macy-five",
+  columns: "4",
+  trueOrder: false,
+  waitForImages: false,
+  margin: {
+    x: 10,
+    y: 10,
+  },
+  breakAt: {
+    1200: {
+      columns: 3,
+    },
+    700: {
+      columns: 2,
+    },
+    450: {
+      columns: 1,
+    },
+  },
+});
+
+const macyInstanceSix = Macy({
+  container: "#macy-six",
+  columns: "4",
+  trueOrder: false,
+  waitForImages: false,
+  margin: {
+    x: 10,
+    y: 10,
+  },
+  breakAt: {
+    1200: {
+      columns: 3,
+    },
+    700: {
+      columns: 2,
+    },
+    450: {
+      columns: 1,
+    },
+  },
+});
+
 const lightbox = GLightbox({
   selector: ".gallery-item",
   touchNavigation: true, // swipe on mobile
@@ -88,6 +198,11 @@ const observer = new IntersectionObserver(
 
       img.onload = () => {
         macyInstanceOne.recalculate(true);
+        macyInstanceTwo.recalculate(true);
+        macyInstanceThree.recalculate(true);
+        macyInstanceFour.recalculate(true);
+        macyInstanceFive.recalculate(true);
+        macyInstanceSix.recalculate(true);
       };
 
       observer.unobserve(img);
