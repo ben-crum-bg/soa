@@ -54,6 +54,62 @@ const macyInstanceEight = Macy({
   },
 });
 
+const macyInstanceNine = Macy({
+  container: "#macy-nine",
+  columns: "6",
+  trueOrder: false,
+  waitForImages: false,
+  margin: {
+    x: 10,
+    y: 10,
+  },
+  breakAt: {
+    1700: {
+      columns: 5,
+    },
+    1450: {
+      columns: 4,
+    },
+    1200: {
+      columns: 3,
+    },
+    700: {
+      columns: 2,
+    },
+    450: {
+      columns: 1,
+    },
+  },
+});
+
+const macyInstanceTen = Macy({
+  container: "#macy-ten",
+  columns: "6",
+  trueOrder: false,
+  waitForImages: false,
+  margin: {
+    x: 10,
+    y: 10,
+  },
+  breakAt: {
+    1700: {
+      columns: 5,
+    },
+    1450: {
+      columns: 4,
+    },
+    1200: {
+      columns: 3,
+    },
+    700: {
+      columns: 2,
+    },
+    450: {
+      columns: 1,
+    },
+  },
+});
+
 const lightbox2 = GLightbox({
   selector: ".gallery-test",
   touchNavigation: true, // swipe on mobile
@@ -123,6 +179,8 @@ const observer = new IntersectionObserver(
       img.onload = () => {
         macyInstanceSeven.recalculate(true);
         macyInstanceEight.recalculate(true);
+        macyInstanceNine.recalculate(true);
+        macyInstanceTen.recalculate(true);
       };
 
       observer.unobserve(img);
